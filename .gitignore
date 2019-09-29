@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 Document/public
 Document/themes/hugo-theme-learn
+=======
+Document/public/
+.DS_Store
+>>>>>>> upstream/master

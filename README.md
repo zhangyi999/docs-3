@@ -1,5 +1,5 @@
 # docs
-The Qitmeer documentation &amp; guides and tutorials. 
+The Qitmeer documentation &amp; guides and tutorials.
 
 # How To Run
 
@@ -33,7 +33,48 @@ Hugo Static Site Generator v0.55.6/extended darwin/amd64 BuildDate: unknown
 ```bash
 git clone https://github.com/HalalChain/docs.git
 cd docs/Document/
-hugo sersve
 
-open http://localhost:1313
+hugo serve
+
+open http://localhost:1313/docs/
+```
+
+# How To Add Document
+
+#### creat a document item
+
+```bash
+hugo new content/example/_index.en.md
+vim content/example/_index.en.md
+```
+
+> Note that all document files are placed under the content folder
+
+#### Configuration page
+
+```bash
+hugo new content/nxtools/_index.en.md
+vim content/nxtools/_index.en.md
+```
+
+Edit page parameters `content/nxtools/_index.en.md`
+
+```bash
+---
+title: NxTools
+
+# Represents the sorting position of the sidebar
+weight: 1
+
+# According to the serial number
+pre: "<b>1. </b>"
+
+# When true, the page paragraph is displayed in the center
+chapter: true
+
+# This option needs to be set if the page has formula content
+mathjax: true
+---
+
+### content
 ```
